@@ -14,9 +14,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val btnNavigate: Button = findViewById(R.id.btn_loggin)
+        val btnNavigate: Button = findViewById(R.id.btn_register)
 
         btnNavigate.setOnClickListener{
             val intentNavigate = Intent(this, LoginActivity().javaClass).apply {
+                val intentNavigate = Intent(this, RegisterActivity().javaClass).apply
             }
 
             startActivity(intentNavigate)}
